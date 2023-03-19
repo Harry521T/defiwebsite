@@ -384,7 +384,7 @@ cursor: pointer;
     padding: 100px 20px;
     height: fit-content;
    }
-   * svggit add{
+   * svg{
     display: none;
    }
    .head h1{
@@ -446,7 +446,7 @@ cursor: pointer;
     height: 30px;
 }
 .info{
-    transform: scale(60%);
+    transform: scale(70%);
 }
 .nav-connect{
     transform: scale(70%);
