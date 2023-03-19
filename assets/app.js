@@ -2,7 +2,7 @@ const pupUpButton=document.getElementsByClassName("btn")
 const pupUpButon=document.getElementsByClassName("wallet")
 const popUp=document.getElementsByClassName("pop-up")[0]
 const Cover=document.getElementsByClassName("cover")[0]
-const info=document.getElementsByClassName("info")[0]
+const info=document.getElementsByClassName("look")[0]
 
 
 
@@ -44,6 +44,20 @@ let img=""
 let nam=""
 let locname=""
 function active(event){
+  info.innerHTML=`
+    <div class="loadin">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="loadin">
+    <img src="done" alt="" class="img">
+    <h2 class="name1">wallet</h2>
+  </div>
+  <p>
+    connecting... please wait
+  </p>
+    `
     btn=element
     btn=event.target
      img=btn.getElementsByTagName("img")[0].src;
@@ -55,7 +69,7 @@ function active(event){
     console.log(img2,nam2);
     console.log(imgIn.src,nam2);
     document.getElementsByClassName("name1")[0].innerHTML=nam
-    setTimeout(change,1500)
+    setTimeout(change,6000)
     locname=nam2
     localStorage.setItem("textvalue",locname)
  }

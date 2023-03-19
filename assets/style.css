@@ -33,8 +33,7 @@ body{
     justify-content: right;
     position: fixed;
     top: 0;
-    background-color: #fff;
-    box-shadow: 5px 0px 10px 10px #fafbff;
+    background-color: #ffffff;
 }
 .nav-connect{
     width: 130px;
@@ -46,25 +45,56 @@ body{
     font-weight: 400;
     font-size: 14px;
 }
+.back{
+    position: absolute;
+    width: 100vw;
+    height:680px;
+    top: 0;
+    z-index: -2;
+    object-fit: cover;
+}
+.overly{
+    position: absolute;
+    width: 100vw;
+    height:680px;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    background-color:rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(1px);
+}
 .head{
+/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84HzrDnHVf05gSPN1jWcosCpIdppCdgGjyOTv4qSdxPCtIO2nia7gGT5ZWt_DBsk8ch0&usqp=CAU"); */
+   background-repeat: no-repeat;
+   background-size: contain;
    width: 100%;
-   height: 600px;
-   padding: 200px 40px;
+   height: 680px;
+   padding: 300px 40px;
    position: relative;
+   display: flex;
+   flex-direction: column;
    z-index: -1;
+   text-align: center;
+   justify-content: space-around;
+   align-items: center;
 }
 .head h1{
+    margin-top: 6vw;
     font-size: 50px;
-    width: 20px;
-    color: blue;
+    color: #fff;
     font-weight: 800;
+}
+.head .connect{
+    cursor: pointer;
+    background-color: #fff;
+    color: blue;
 }
 .head p{
     margin-top: 2vw;
     font-weight: 400;
-    width: 50%;
     font-size: 14px;
-    color: rgb(144, 144, 160);
+    width: 60%;
+    color: rgb(244, 244, 247);
 }
   * svg{
     position: absolute;
@@ -89,6 +119,9 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .steps:nth-child(even){
     background-color: blue;
@@ -321,7 +354,32 @@ cursor: pointer;
 .dis{
     display: flex;
 }
- 
+.icon{
+    width: 30%;
+    height: auto;
+    align-self: center;
+}
+
+ footer{
+    margin-top: 3vw;
+    font-size: calc(6px + 1vw);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #b6b4b4;
+ }
+ footer div{
+    display: flex;
+    gap: calc(5px + 1vw);
+    justify-content: space-between;
+    color: #b6b4b4;
+ }
+ footer div a{
+    text-decoration: none;
+    color: #b6b4b4;
+    cursor: pointer;
+ }
+
 
 .cont2 h1,
 .cont1 h1{
@@ -440,11 +498,9 @@ cursor: pointer;
    }
    .head{
     padding: 100px 20px;
-    height: fit-content;
+    height: 500px;
    }
-   * svg{
-    display: none;
-   }
+   
    .head h1{
     font-size: 40px;
    }
