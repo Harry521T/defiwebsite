@@ -47,6 +47,8 @@ body{
 }
 .back{
     background-image: url("https://wallpaperaccess.com/full/5432092.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     width: 100vw;
     height:680px;
@@ -70,8 +72,7 @@ body{
    background-size: contain;
    width: 100%;
    height: 680px;
-   margin-top: 300px;
-   padding: 40px;
+   padding: 300px 40px;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -499,8 +500,7 @@ cursor: pointer;
     grid-template-columns: 1fr;
    }
    .head{
-    margin-top: 100px ;
-    padding: 20px;
+    padding: 100px 20px;
     height: 500px;
    }
    
