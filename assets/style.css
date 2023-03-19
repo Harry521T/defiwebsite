@@ -194,6 +194,8 @@ body{
 .wallet img{
     width: 50%;
     height: auto;
+    pointer-events: none;
+    cursor: pointer;
 }
 .wallet h2{
     text-transform: capitalize;
@@ -277,7 +279,7 @@ cursor: pointer;
 }
 .cont{
     width: 500px;
-    height: 400px;
+    height: 450px;
     box-shadow: 5px 5px 10px 5px #fafbff;
     position: relative;
     padding-top: 10px;
@@ -288,7 +290,9 @@ cursor: pointer;
     justify-content: space-around;
 }
 
-
+.hide{
+    display: none;
+}
 .label  div{
     width: 30%;
     height: 100%;
@@ -306,7 +310,7 @@ cursor: pointer;
 .cont2,
 .cont3{
     width: 100%;
-    height: 350px;
+    height: 400px;
     position: absolute;
     bottom: 0;
     display: none;
@@ -364,6 +368,60 @@ cursor: pointer;
     background-color: blue;
     color: #fff;
     border: none;
+}
+.loadin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.loadin div{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 2000px;
+}
+.loadin div:nth-child(1){
+    animation: first 1s ease infinite;
+}
+.loadin div:nth-child(2){
+    animation: first 1s ease infinite;
+    animation-delay: .1s;
+}
+.loadin div:nth-child(3){
+    animation: first 1s ease infinite;
+    animation-delay: .2s;
+}
+.loadin img{
+    background-color: aqua;
+    width: 18px;
+    height: auto;
+}
+.loadin h2{
+    font-size: 19px;
+    font-weight: 600;
+}
+.info p{
+    color: blue;
+    font-size: 14px;
+}
+@keyframes first {
+    100%{
+        transform: scale(0%);
+        opacity: 0;
+    }
+}
+@keyframes first1 {
+    100%{
+        transform: scale(0%);
+        opacity: 0;
+    }
+}
+@keyframes first2 {
+    100%{
+        transform: scale(0%);
+        opacity: 0;
+    }
 }
 @media screen and (max-width: 900px) {
    .main{

